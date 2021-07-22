@@ -7,25 +7,24 @@ struct edge{
 }; 
 
 class turingMachine{
-  public:
-  	vector <char> tape;
-   	vector < vector<edge> > edges;
-   	int current_state,state_num,accept_state;
-   	int tape_position;
-   	
-   	turingMachine(){};
-   	
-   	turingMachine(int n){
-   		state_num=n;
-   		current_state=0;
-   		accept_state=n-1;
-	}
-	
-   	void createInputTape(string s){
-   		for (int i=0;i<s.size();i++){
-   			tape.push_back(s[i]);
+	public:
+		vector <char> tape;
+		vector < vector<edge> > edges;
+		int current_state,state_num,accept_state;
+		int tape_position;
+		
+		turingMachine(){};
+		turingMachine(int n){
+			state_num=n;
+			current_state=0;
+			accept_state=n-1;
 		}
-	}
+	
+		void createInputTape(string s){
+			for (int i=0;i<s.size();i++){
+				tape.push_back(s[i]);
+			}
+		}
 };
 
 void start(turingMachine& machine){
