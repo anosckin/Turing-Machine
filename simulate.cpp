@@ -4,7 +4,7 @@ using namespace std;
 struct edge{
 	int to;
 	char read,write,tapeDirection;
-};
+}; 
 
 class turingMachine{
   public:
