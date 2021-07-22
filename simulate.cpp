@@ -19,13 +19,13 @@ class turingMachine{
    		state_num=n;
    		current_state=0;
    		accept_state=n-1;
-		}
+	}
 	
    	void createInputTape(string s){
    		for (int i=0;i<s.size();i++){
    			tape.push_back(s[i]);
-			}
 		}
+	}
 };
 
 void start(turingMachine& machine){
