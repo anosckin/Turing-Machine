@@ -7,26 +7,25 @@ struct edge{
 };
 
 class turingMachine{
-    public:
-    	vector <char> tape;
-    	vector < vector<edge> > edges;
-    	int current_state,state_num,accept_state;
-    	int tape_position;
-    	
-    	turingMachine(){};
-    	
-    	turingMachine(int n){
-    		state_num=n;
-    		current_state=0;
-    		accept_state=n-1;
+  public:
+  	vector <char> tape;
+   	vector < vector<edge> > edges;
+   	int current_state,state_num,accept_state;
+   	int tape_position;
+   	
+   	turingMachine(){};
+   	
+   	turingMachine(int n){
+   		state_num=n;
+   		current_state=0;
+   		accept_state=n-1;
 		}
-		
-    	void createInputTape(string s){
-    		for (int i=0;i<s.size();i++){
-    			tape.push_back(s[i]);
+	
+   	void createInputTape(string s){
+   		for (int i=0;i<s.size();i++){
+   			tape.push_back(s[i]);
 			}
 		}
-		
 };
 
 void start(turingMachine& machine){
@@ -61,7 +60,6 @@ void start(turingMachine& machine){
 		}
 		
 		cout<<machine.current_state<<endl;
-		
 	}
 }
 int main () {
@@ -72,7 +70,6 @@ int main () {
 	
 	vector <edge> edges_of_node_i;
 	for (int i=0;i<n-1;i++){
-		
 		int k;
 		cin>>k;
 		
@@ -81,6 +78,7 @@ int main () {
 		for (int j=0;j<k;j++){
 			edge cur_edge;
 			cin>>cur_edge.read>>cur_edge.to>>cur_edge.write>>cur_edge.tapeDirection;
+			
 			edges_of_node_i.push_back(cur_edge);
 		}
 		
