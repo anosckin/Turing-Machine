@@ -12,6 +12,8 @@ Description of a Turing Machine input:
 - next n-1 lines contains descriptions for the edges coming out of said states.
 - on ith line the first number is the number of edges going out from state with index i
 - each edge is described with 4 variables.
+- 
+edge:
 1. the symbol needed to traverse the edge
 2. which state does this edge go to
 3. what symbol we write on the tape
