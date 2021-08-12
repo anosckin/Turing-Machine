@@ -1,5 +1,5 @@
 # Turing-Machine
-Run-NFA -> runs a simulation on a NFA with the given string
+Simulates a Turing machine on a given string
 
 ## Details
 
